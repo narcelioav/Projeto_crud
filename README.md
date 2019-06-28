@@ -1,2 +1,2 @@
-# Projrto_crud
+# Projeto_crud
 para tirar duvidas
