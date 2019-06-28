@@ -1,2 +1,2 @@
 # Projeto_crud
-para tirar duvidas
+Projeto para tirar duvidas sobre interação de php com mysql, que cria registros em banco de dados, lê, da update e deleta.
