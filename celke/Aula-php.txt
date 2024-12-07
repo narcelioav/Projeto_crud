@@ -1,0 +1,9 @@
+Tipos de variaveis
+
+Inteiro
+Ponto Flutuante
+String
+Objeto
+Array
+Boolean
+
