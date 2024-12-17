@@ -1,0 +1,18 @@
+//Acessando o banco de dados do terminal cmd.
+
+acesse o diretorio do banco de dados mysql no servidor xamp.
+
+execute: mysql -h localhost -u root -p
+
+informe a senha
+
+Depois de acessar, execute: show databases;
+
+exit; "sai da tabela"
+
+execute: mysql -h localhost -u root -p celke "para acessar a base de dados"
+informe a senha
+
+CREATE TABLE usuarios; "cria uma tabela atraves do cmd"
+
+DROP TABLE usuarios; "deleta a tabela atraves do cmd"

@@ -1,0 +1,21 @@
+//Comando SQL para criar o banco de dados:
+
+CREATE DATABASE usuario
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+//Comando SQL para criar uma tabela:
+//com uma chave primaria:
+//Uma tabela é formada de registros e colunas.
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    modified_at DATETIME NULL
+);
+
+//Para apagar a tabela:
+
+DROP TABLE IF EXISTS 'usuarios';

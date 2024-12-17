@@ -1,0 +1,12 @@
+//Uma chave primaria identifica cada registro amazenado na tabela.
+
+Uma tabela pode conter apenas uma PRIMARY KEY.
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL    
+);
+
+//Auto incremento é utilizado para geração de valors para a coluna sempre que uma nova linha esta sendo inserida.
+
+//NOT NULL garante que o conteudo da coluna tenha um valor.

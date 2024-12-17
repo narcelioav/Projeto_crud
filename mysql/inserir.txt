@@ -1,0 +1,11 @@
+//Comando SQL para inserir dados:
+
+tabela: usuarios;
+campos: id, nome, email, created, modifiel.
+valores: ...
+
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `created`, `modified`) VALUES (NULL, 'cesar', 'cesar@celke.com', '2024-12-10 21:28:16.000000', NULL), (NULL, 'kelly', 'kelly@celke.com', '2024-12-10 21:28:16.000000', NULL);
+
+//Comando SQL para selecionar tabelas:
+
+SELECT * FROM 'usuarios'

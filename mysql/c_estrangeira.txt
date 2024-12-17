@@ -1,0 +1,18 @@
+//Chave estrangeira em uma tabela: contem valores que correspondem a chave primaria de outra tabela.
+Uma tabela pode ter uma ou mais chaves estrangeiras.
+
+O tipo de banco de dados: InnoDB
+
+Acrescentar indice:
+
+ALTER TABLE `usuarios` ADD INDEX (`sits_usuario_id`);
+
+"NÃO SÃO ASPAS, É CRASE `"
+
+Criar o relacionamento entre as tabelas:
+
+ALTER TABLE `contatos` ADD FOREIGN KEY (`usuario_id`) RFERENCES `usuario`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+CASCADE: Quando um registro é apagado na tabela da chave primaria, tambem é apagado na tabela da chave secundaria.
+
+RESTRICT: Não permite apagar um registro da tabela onde ha vinculo com uma chave secundaria.
