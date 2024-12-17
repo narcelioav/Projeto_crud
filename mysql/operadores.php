@@ -1,11 +1,15 @@
-<?php  
-//Clausula WHERE
+<?php 
 
-//A clausula WHERE é usada para extrair somente os registros que satisfaçam um criterio especifico.
+//Operadores AND & OR
+
+//O AND "e" & OR "ou" operadores são usados para filtrar registros com base em mais de uma condição.
+
 /*
-SELECT column1, column2, ...
+SELECT column-1, column-2, ...
 FROM table_name
-WHERE condition;
+WHERE condition-1 AND
+condition-2 OR 
+condition-3 ...;
 */
 
 include_once 'conexao_try_catch.php';
