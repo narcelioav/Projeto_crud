@@ -1,0 +1,10 @@
+Limitar itens selecionados
+
+LIMIT é uma clausula de limite que é usado para especificar o numero de registros a serem retornados.
+
+SELECT * FROM nome_tabela LIMIT 30
+
+Para selecionar 3 registros a partir do 15.
+Pode ser usado OFFSET.
+
+SELECT * FROM Orders LIMIT 3 OFFSET 15

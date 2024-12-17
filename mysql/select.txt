@@ -1,0 +1,9 @@
+<?php
+    //Instrução SELECT
+
+    //O SELECT utilizado para obter registros de uma ou mais tabelas, em um banco de dados.
+
+    $query = "SELECT * FROM tabela";
+
+    $resultado = mysqli_query($conn, $query);
+?>

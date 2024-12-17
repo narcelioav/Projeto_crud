@@ -1,0 +1,20 @@
+Normalizando um Banco de dados
+
+Normalização é uma ferramenta usada no projeto logico do banco de dados. Serve para estruturar tabelas e atributos, reduzindo assim redundancias e permitindo o correto crescimento do banco de dados.
+
+Por meio dela que bancos com muita movimentação garantem sua integridade apos remoção, inserção e alteração dos dados.
+
+Primeira Forma Normalizando
+
+Banco de dados esta na primeira forma normal quando todos os atributos contem apenas um valor correspondente, singular e não existem grupos de atributos repetidos, ou seja, não admite repetições ou campos que tenham mais que um valor.
+
+Segunda Forma Normal
+
+O Banco de dados esta na segunda forma normal se ela atende a todos os requisitos da primeira forma normal e se os registros na tabela, dependem da chave primaria em sua totalidade.
+Quando não depende, o mesmo valor é aplicado para varios registros, necessario criar uma tabela separada.
+
+Terceira Forma Normal
+
+Banco de dados esta na terceira forma normal, quando atende a todos os requisitos da segunda forma normal e todos os campos dependem de chave.
+Eliminar os campos que não dependem de chave.
+
