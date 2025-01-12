@@ -9,7 +9,7 @@
 <body>
 <?php 
 
-//Instrução INSERT Instrução
+//Instrução INSERT
 
 //A instrução INSERT INTO é usada para inserir novos registros em uma tabela.
 

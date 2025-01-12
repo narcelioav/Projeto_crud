@@ -32,7 +32,7 @@ if(!empty($dados['SendCadUsuario'])){
     //$nome = $dados['nome'];
     //$nome = mysqli_real_escape_string($conn, $dados['nome']);
 
-    //Emcriptografar Senha
+    //Encriptografar Senha
     $senha_cript = password_hash($dados['senha'], PASSWORD_DEFAULT);
 
     $query_cad_usuario = "INSERT INTO usuarios (nome, email, senha, sits_usuario_id, niveis_acesso_id, created) VALUES ('".$dados['nome']."', '".$dados['email']."', '$senha_cript', ".$dados['sits_usuario_id'].", ".$dados['niveis_acesso_id'].", now())";

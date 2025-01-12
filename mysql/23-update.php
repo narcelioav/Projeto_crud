@@ -12,11 +12,11 @@
 //A instrução UPDATE é usada para atualizar registros em uma tabela.
 
 /*<!--UPDATE table_name
-SET COLUMN1=VALUE1, COLUMN2=VALUE=2, ...
-     
+SET COLUMN1=VALUE1, COLUMN2=VALUE=2, ...     
 WHERE some_column=some_value;
 -->*/
 
+//conexao com o banco de dados
 include_once 'conexao.php';
 
 echo "<h1>Editar usuarios</h1>";
