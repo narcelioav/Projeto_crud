@@ -1,0 +1,9 @@
+//Verificar se o email não esta sendo utilizado
+
+$email = mysqli_real_escape_string($conn, $dados['email']);
+    $query_view_usuario = "SELECT id FROM usuarios WHERE email = '$email' LIMIT 1";
+    $result_view_usuario = mysqli_query($conn, $query_view_usuario);
+    if(($result_view_usuario) and ($result_view_usuario->num_rows != 0)){
+        $empty_input = true;
+        echo "<p style='color: #f00'>Erro: Este e-mail já esta cadastrado!</p>";
+    }

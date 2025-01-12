@@ -10,7 +10,7 @@ WHERE condition;
 
 include_once 'conexao_try_catch.php';
 
-    $query_usuarios = "SELECT id, nome, email, sits_usuario_id, niveis_acesso_id, created, modified FROM usuarios WHERE niveis_acesso_id = 3 AND sits_usuario_id = 1 LIMIT 10";
+    $query_usuarios = "SELECT id, nome, email, sits_usuario_id, niveis_acesso_id, created, modified FROM usuarios WHERE niveis_acesso_id = 1 AND sits_usuario_id = 1 LIMIT 10";
 
     $result_usuarios = mysqli_query($conn, $query_usuarios);
 
