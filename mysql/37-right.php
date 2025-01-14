@@ -13,26 +13,22 @@ include_once 'conexao_try_catch.php';
 
 <body>
 
-    <h1>LEFT JOIN - Recupera registro de duas tabelas</h1>
+    <h1>RIGHT JOIN - Recupera registro de duas tabelas</h1>
 
     <?php 
         /*
-        A clausula LEFT JOIN permite obter não apenas os dados relacionamento de duas tebelas, mas tambem os dados não relacionados.
+        A clausula RIGHT JOIN retorna todos os dados encontrados na tabela a direita de JOIN. Caso não existam dados associados entre as tabelas a esquerda e a direita de JOIN, serão retornados valores nulos
     
         SELECT column_name
         FROM table_name1
-        LEFT JOIN table_name2 ON
+        RIGHT JOIN table_name2 ON
         table_name1.column_name =
         table_name2.column_name;
         */
-        $query_usuarios = "SELECT usr.id, usr.nome, usr.email,
-        ende.logradouro AS log_ende, ende.numero AS num_ende,
-        cont.celular AS cel_cont
-        /*Erro: O browser não retornava devido uma virgula.*/
-            FROM usuarios AS usr 
-            LEFT JOIN enderecos AS ende ON ende.usuario_id = usr.id
-            LEFT JOIN contatos AS cont ON cont.usuario_id = usr.id
-            ORDER BY usr.id ASC";
+        $query_usuarios = "SELECT ende.id, ende.logradouro AS log_ende, ende.numero AS num_ende,
+        usr.nome
+            FROM enderecos AS ende 
+            RIGHT JOIN usuarios AS usr ON usr.id = ende.usuario_id ";
         $result_usuarios = mysqli_query($conn, $query_usuarios);
 
 
@@ -41,9 +37,8 @@ include_once 'conexao_try_catch.php';
             var_dump($row_usuario);
             echo "</pre>";*/
             extract($row_usuario);
-            echo "Id do usuario: $id <br>";
+            echo "Id do endereço: $id <br>";
             echo "Nome do usuario: $nome <br>";
-            echo "E-mail do usuario: $email <br>";
             echo "Endereço: $log_ende $num_ende <br>";
             echo "Celular: $cel_cont <br>";
             echo "<hr>";
