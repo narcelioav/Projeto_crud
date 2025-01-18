@@ -2,9 +2,9 @@ var num1 = 5;
 var num2 = 5;
 var num3 = 17;
 
-document.write("<p>Aula 6</p>");
+document.write("<p>Aula 7</p>");
 
-document.write("<h1>Operações de Comparação</h1>");
+document.write("<h1>Operações Logicos</h1>");
 
 /*
 if (num1 == num2) {
