@@ -30,15 +30,7 @@ echo "<h1>Aulas acessadas</h1>";
     INNER JOIN acessos_aulas AS ace ON ace.aula_id=aul.id
     WHERE ace.usuario_id = $usuario_id
     GROUP BY ace.aula_id ";
-    //GROUP vai agrupar por aulas, caso retire 
-    
-    
-    
-    
-    
-    
-    
-    retornara um unico registro do COUNT(com a quantidade de aulas)
+    //GROUP vai agrupar por aulas, caso retire retornara um unico registro do COUNT(com a quantidade de aulas)
 
     $result_aulas = mysqli_query($conn, $query_aulas);
 

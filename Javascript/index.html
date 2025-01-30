@@ -224,9 +224,36 @@
         <hr>
     </div>
 
+
     <div id="aula9a" class="funcao">
-    <iframe src="aula_9/funcao.html" width="50%" height="350px" style="border: none;"></iframe>
+        <iframe src="aula_9/funcao.html" width="50%" height="350px" style="border: none;"></iframe>
         <hr>
+    </div>
+
+
+    
+    <div id="aula10" class="condicional">
+
+        <h1>Estrutura Condicional If</h1>
+        <script>
+            fetch('./aula_a/condicional.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('aula10').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo HTML:', error));
+        </script>
+        <hr>
+    
+        <div>
+            <p>O método fetch só funciona corretamente se o arquivo HTML estiver sendo servido por um servidor web. Ele não funciona diretamente abrindo o arquivo principal pelo explorador de arquivos (ex.: file://).</p>
+
+            <p>Depois de iniciar o servidor, acesse a página via http://localhost.</p>
+
+            <p>Fazendo uso do Xampp.</p>
+            <hr>    
+        </div>
+
     </div>
 
 </body>
