@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celke - JavaScript Aula 10</title>
+</head>
+
+<body>
+    <!--Aula 10-->
+
+    <div id="aula10" class="condicional">
+        <h1>Estrutura Condicional if</h1>
+	<code>
+		function validar() {<br>
+			alert("Login ou senha incorreto");<br>
+		}<br><br>
+	</code>
+	
+<div id="aula_a"></div>
+    <script>
+        fetch('personalizado.js')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('aula_a').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o arquivo HTML:', error));
+    </script>   
+    
+    <script src="personalizado.js"></script>
+
+    <button onclick="window.parent.location.href='../index.html#aula10'">Home</button>
+</div>
+</body>
+</html>
+
