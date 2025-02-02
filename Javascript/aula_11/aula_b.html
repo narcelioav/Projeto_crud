@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celke - JavaScript Aula 11</title>
+</head>
+
+<body>
+    <!--Aula 11-->
+
+    <div id="aula11" class="condicional">
+        <h1>Estrutura Condicional Switch</h1>
+        <code>
+            var tipo = 2;<br>
+                       
+            switch (tipo) {<br>
+                caso 1:<br>
+                	document.write("Apartamento");<br>
+            		break;<br>
+                caso 2:<br>
+                	document.write("Casa");<br>
+            		break;<br>
+                caso 3:<br>
+                	document.write("Sala Comercial");<br>
+            		break;<br>
+                caso 4:<br>
+                	document.write("Sobrado");<br>
+            		break;<br>
+                default:<br>
+                	document.write("A chave não corresponde a nenhum tipo de imovel!");<br>
+            }<br><br>       
+        </code>
+
+        <div id="aula_b"></div>
+        
+        <h2>Digite numero da Moradia (1 a 5):</h2>
+        <form id="formTipo">
+            <input type="number" id="inputTipo" step="0.1" min="0" max="10" required>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="resultado"></div><br>
+
+        <button id="reiniciar" style="display: none;" onclick="reiniciarFormulario()">Inserir nova nota</button>
+
+        <script src="./personalizado.js"></script><br>
+
+        <button onclick="window.parent.location.href='../index.html#aula11'">Home</button>
+    </div>
+</body>
+
+</html>

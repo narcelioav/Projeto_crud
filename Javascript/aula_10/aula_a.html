@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celke - JavaScript Aula 10</title>
+</head>
+
+<body>
+    <!--Aula 10-->
+
+    <div id="aula10" class="condicional">
+        <h1>Estrutura Condicional if</h1>
+        <code>
+            var nota = 2;<br>
+                       
+            if (nota >= 7) {<br>
+                document.write("Nota: " + nota + "Aluno Aprovado. br");<br>
+            } else if ((nota < 7) && (nota >= 4)) {<br>
+                document.write("Nota: " + nota + "Aluno em Recuperação. br");<br>
+            } else {<br>
+                document.write("Nota: " + nota + "Aluno Reprovado. br");<br>
+            }<br><br>       
+        </code>
+
+        <div id="aula_a"></div>
+        <!--<script>
+            fetch('personalizado.js')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('aula_a').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo HTML:', error));
+        </script>-->
+        <h2>Digite sua nota:</h2>
+        <form id="formNota">
+            <input type="number" id="inputNota" step="0.1" min="0" max="10" required>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="resultado"></div><br>
+
+        <button id="reiniciar" style="display: none;" onclick="reiniciarFormulario()">Inserir nova nota</button>
+
+        <script src="./personalizado.js"></script><br>
+
+        <button onclick="window.parent.location.href='../index.html#aula10'">Home</button>
+    </div>
+</body>
+
+</html>

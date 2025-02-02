@@ -230,30 +230,47 @@
         <hr>
     </div>
 
+<!-- ********** Codigo capitulo 10 - Condicional if *********** -->
 
-    
     <div id="aula10" class="condicional">
-
-        <h1>Estrutura Condicional If</h1>
+        <div id="aula_a"></div>
         <script>
-            fetch('./aula_a/condicional.html')
+            fetch('./aula_10/condicional.html')
                 .then(response => response.text())
                 .then(data => {
-                    document.getElementById('aula10').innerHTML = data;
+                    document.getElementById('aula_a').innerHTML = data;
                 })
                 .catch(error => console.error('Erro ao carregar o arquivo HTML:', error));
         </script>
-        <hr>
-    
-        <div>
-            <p>O método fetch só funciona corretamente se o arquivo HTML estiver sendo servido por um servidor web. Ele não funciona diretamente abrindo o arquivo principal pelo explorador de arquivos (ex.: file://).</p>
+        
+    </div>
 
-            <p>Depois de iniciar o servidor, acesse a página via http://localhost.</p>
+<!-- ********** Codigo capitulo 11 - Condicional switch *********** -->
 
-            <p>Fazendo uso do Xampp.</p>
-            <hr>    
-        </div>
+    <div id="aula11" class="condicional">
+        <div id="aula_b"></div>
+        <script>
+            fetch('./aula_11/switch.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('aula_b').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo HTML:', error));
+        </script>
+    </div>
 
+<!-- ********** Codigo capitulo 12 - Condicional switch *********** -->
+
+    <div id="aula12" class="loop">
+        <div id="aula_c"></div>
+        <script>
+            fetch('./aula_12/while.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('aula_c').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo HTML:', error));
+        </script>
     </div>
 
 </body>
