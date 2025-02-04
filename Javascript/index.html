@@ -224,6 +224,7 @@
         <hr>
     </div>
 
+<!-- ********** Codigo capitulo 9 - Função *********** -->
 
     <div id="aula9a" class="funcao">
         <iframe src="aula_9/funcao.html" width="50%" height="350px" style="border: none;"></iframe>
@@ -245,7 +246,7 @@
         
     </div>
 
-<!-- ********** Codigo capitulo 11 - Condicional switch *********** -->
+<!-- ********** Codigo capitulo 11 - Estrutura Condicional Switch *********** -->
 
     <div id="aula11" class="condicional">
         <div id="aula_b"></div>
@@ -259,7 +260,7 @@
         </script>
     </div>
 
-<!-- ********** Codigo capitulo 12 - Condicional switch *********** -->
+<!-- ********** Codigo capitulo 12 - Estrutura de Loop while *********** -->
 
     <div id="aula12" class="loop">
         <div id="aula_c"></div>
@@ -272,6 +273,37 @@
                 .catch(error => console.error('Erro ao carregar o arquivo HTML:', error));
         </script>
     </div>
+
+<!-- ********** Codigo capitulo 13 - Estrutura de Loop do while  *********** -->
+
+    <div id="aula13" class="loopdo">
+        <div id="aula_d"></div>
+        <script>
+            fetch('aula_13/dowhile.html')
+                .then(response => response.text())
+  
+              .then(data => {
+                    document.getElementById('aula_d').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo HTML:', error));
+        </script>
+    </div>
+
+<!-- ********** Codigo capitulo 14 - Estrutura de Loop for  *********** -->
+
+    <div id="aula14" class="for">
+        <div id="aula_e"></div>
+        <script>
+            fetch('aula_14/for.html')
+                .then(response => response.text())
+  
+              .then(data => {
+                    document.getElementById('aula_e').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo HTML:', error));
+        </script>
+    </div>
+
 
 </body>
 </html>
