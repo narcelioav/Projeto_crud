@@ -304,6 +304,22 @@
         </script>
     </div>
 
+<!-- ********** Codigo capitulo 15 - Objetos em JavaScript  *********** -->
+
+    <div id="aula15" class="objeto">
+        <div id="aula_f"></div>
+        <script>
+            fetch('aula_15/objeto.html')
+                .then(response => response.text())
+  
+              .then(data => {
+                    document.getElementById('aula_f').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo HTML:', error));
+        </script>
+    </div>
+
+
 
 </body>
 </html>
