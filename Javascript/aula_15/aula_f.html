@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celke - JavaScript Aula 15</title>
+</head>
+
+<body>
+    <!--Aula 15-->
+
+    <div id="aula15" class="objeto">
+        <h1>Objetos em JavaScript</h1>
+        <code>
+            	var cadeira = {<br>
+			cor: "Preta",<br>
+			altura: "118",<br>
+			largura: "74",<br>
+			profundidade: "64",<br>
+		};<br>
+
+                document.write("Cor da cadeira: " + cadeira.cor + "br");<br>
+                document.write("Altura da cadeira: " + cadeira.altura + "br");<br><hr>
+
+		cadeira.cor = "Branca"; <br>
+                document.write("Cor da cadeira: " + cadeira.cor + "br");<br><hr>
+		cadeira.peso = 17; <br>
+                document.write("Peso da cadeira: " + cadeira.peso + "br");<br><hr>
+
+                document.write("Profundidade da cadeira: " + cadeira.profundidade + "br");<br>
+		delete cadeira.profundidade;<br>
+		document.write("Profundidade da cadeira: " + cadeira.profundidade + "br");<br><hr>
+
+                document.write("h2
+Objeto tipo NEW/h2 br");<br><br>
+
+		var mesa = new object();<br>
+		mesa.cor = "Preta";<br>
+		mesa.largura = 220;<br>
+                document.write("Cor da mesa: " + mesa.cor + "br");<br><hr>
+                document.write("Largura da mesa: " + mesa.largura + "cm br");<br><hr>
+        </code>
+
+        <script src="personalizado.js"></script><br>
+
+        <button onclick="window.parent.location.href='../index.html#aula15'">Home</button>
+    </div>
+
+</body>
+</html>
