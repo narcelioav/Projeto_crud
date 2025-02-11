@@ -319,6 +319,21 @@
         </script>
     </div>
 
+<!-- ********** Codigo capitulo 16 - Array em JavaScript  *********** -->
+
+    <div id="aula16" class="array">
+        <div id="aula_g"></div>
+        <script>
+            fetch('aula_16/array.html')
+                .then(response => response.text())
+  
+              .then(data => {
+                    document.getElementById('aula_g').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo HTML:', error));
+        </script>
+    </div>
+
 
 
 </body>

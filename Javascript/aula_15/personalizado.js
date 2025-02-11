@@ -1,3 +1,5 @@
+document.write("<h2>Objeto cadeira</h2>");
+
 var cadeira = {
 			cor: "Preta",
 			altura: "118",
@@ -17,10 +19,4 @@ var cadeira = {
 		delete cadeira.profundidade;
 		document.write("Profundidade da cadeira: " + cadeira.profundidade + "<br><hr>");
 
-                document.write("<h2>Objeto tipo NEW</h2>");
-
-		var mesa = new Object();
-		mesa.cor = "Preta";
-		mesa.largura = 220;
-                document.write("Cor da mesa: " + mesa.cor + "<br>");
-                document.write("Largura da mesa: " + mesa.largura + "cm <br>");
+                
