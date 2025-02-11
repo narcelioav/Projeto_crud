@@ -1,8 +1,8 @@
 let n1 = 0;
 let n2 = 1;
 
-for(let i = 0; i < 11; i++){
-    if(i <= 1) console.log(i)
+for(let i = 0; i < 11; i++){ 
+    if(i <= 1) console.log(i) //digita o zero, depois 1, quando maior que 1 entra no else.
     else{
         let save = n2;
         n2 += n1;
@@ -22,3 +22,20 @@ function fibonacciSequence(length) {
 }
 
 fibonacciSequence(11);
+
+const fibonacciSequence = (length) => {
+    let [n1, n2] = [0, 1];
+    
+    Array.from({ length }, () => {
+        console.log(n1);
+        [n1, n2] = [n2, n1 + n2];
+    });
+};
+
+fibonacciSequence(10);
+
+//escreve 0; / n1 = 0 / n2 = n1(0) + n2(1);
+//agora escreve 1; / n1 = n2 / n2 = n1(1) + n2(1);
+//agora escreve 1; / n1 = n2 / n2 = n1(1) + n2(2);
+//agora escreve 1; / n1 = n2 / n2 = n1(2) + n2(3);
+//agora escreve 1; / n1 = n2 / n2 = n1(3) + n2(5);
