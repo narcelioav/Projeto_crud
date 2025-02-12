@@ -334,6 +334,20 @@
         </script>
     </div>
 
+<!-- ********** Codigo capitulo 17 - Eventos em JavaScript  *********** -->
+
+    <div class="evento">
+        <div id="aula17"></div>
+        <script>
+            fetch('aula_17/evento.html')
+                .then(response => response.text())
+  
+              .then(data => {
+                    document.getElementById('aula17').innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo HTML:', error));
+        </script>
+    </div>
 
 
 </body>
