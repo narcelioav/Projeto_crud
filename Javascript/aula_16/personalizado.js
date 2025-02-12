@@ -20,21 +20,31 @@ document.getElementById("codeOutput3").innerText = codigo3;
 eval(codigo3);
 
 let codigo4 = `frutas.forEach(function(item, indice, array) {
-    document.getElementById("result4").innerHTML += indice + ": " + item + "<br>";
+    document.getElementById("result4").innerHTML += indice + ": " + item + " / ";
 });
 `;
 document.getElementById("codeOutput4").textContent = codigo4;
 eval(codigo4);
 
-//frutas.push("Maçã");
-//frutas.unshift("Kiwi");
-let codigoa = "document.getElementById('resulta').innerHTML += 'Adicionar um item ao final do Array ' + frutas.push("Maçã"); + '<br>';";
-let codigob = "document.getElementById('resultb').innerHTML += 'Adicionar um item ao inicio do Array ' + frutas.unshift("Kiwi"); + '<br>';";
-let codigo5 = `frutas.forEach(function(item, indice, array) {
-    document.getElementById("result5").innerHTML += indice + ": " + item + "<br>";
+let codigo5 = `
+frutas.push("Maçã");
+frutas.unshift("Kiwi");
+
+frutas.forEach(function(item, indice, array) {
+    document.getElementById("result5").innerHTML += indice + ": " + item + " / ";
 });
 `;
 document.getElementById("codeOutput5").textContent = codigo5;
-eval(codigoa);
-eval(codigob);
 eval(codigo5);
+
+let codigo6 = `
+frutas.pop();
+frutas.shift();
+frutas.splice(2, 2);
+
+frutas.forEach(function(item, indice, array) {
+    document.getElementById("result6").innerHTML += indice + ": " + item + " / ";
+});
+`;
+document.getElementById("codeOutput6").textContent = codigo6;
+eval(codigo6);
