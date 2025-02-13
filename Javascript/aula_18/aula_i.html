@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celke - JavaScript Aula 18</title>
+</head>
+
+<body>
+	<h1>DOM - Document Object Model</h1>
+	<h4>Imprimindo com console.log - visivel no inspecionar do browser</h4>
+	<h2>Exemplo getElementById</h2>
+		<p id="exemplo-um"></p>
+		<hr>
+
+	<h2>Exemplo getElementByName</h2>
+		<input type="checkbox" name="curso" value="html">HTML
+		<input type="checkbox" name="curso" value="css">CSS
+		<input type="checkbox" name="curso" value="javascript">JavaScript
+             	<button onclick="exemploDois()">Exemplo 2</button>
+		<hr>
+
+	<h2>Exemplo getElementByTagName</h2>
+		<span>Teste 1</span>
+		<span>Teste 2</span>
+		<span>Teste 3</span>
+             	<button onclick="exemploTres()">Exemplo 3</button>
+		<hr>
+
+	<h2>Exemplo getElementByTagName</h2>
+	<ul>
+		<li>Teste 1</li>
+		<li>Teste 2</li>
+		<li>Teste 3</li>
+	</ul>
+             	<button onclick="exemploQuatro()">Exemplo 4</button>
+		<hr>
+
+	<h2>Exemplo getElementByClassName</h2>
+		<p class="produto">Abacate</p>
+		<p class="produto">Abacaxi</p>
+		<p class="produto">Amora</p>
+		<p class="produto">Açai</p>
+		<p class="produto">Cereja</p>
+             	<button onclick="exemploCinco()">Exemplo 5</button>
+		<hr>
+
+        <script src="personalizado.js"></script>
+	<br>
+        <button onclick="window.parent.location.href='../index.html#aula18'">Home</button>
+    
+</body>
+</html>
